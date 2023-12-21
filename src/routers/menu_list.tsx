@@ -45,16 +45,16 @@ const web = [
   },
   {
     path: '/user',
-    name: '用户',
+    name: '用户中心',
     icon: <UsergroupAddOutlined />,
     message: '用户信息'
   },
-//  {
-//      path: 'https://github.com/Winston1011/ChatGPT-Web',
-//     name: '项目地址',
-//      icon: <GithubOutlined />,
-//      message: '免费开源可商业化AIWeb项目'
-//   }
+  {
+    path: 'https://sky350.com',
+    name: 'SKY博客',
+    icon: <GithubOutlined />,
+    message: '各种资源教程分享'
+  }
 ]
 
 const admin = {
