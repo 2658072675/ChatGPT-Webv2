@@ -691,11 +691,11 @@ router.post('/chat/completions', async (req, res) => {
         ...options
     };
     if (chat.status === 200 && chat.headers.get('content-type')?.includes('text/event-stream')) {
-        const ai3_ratio = (await models_1.configModel.getKeyConfig('ai3_ratio')).value || 0;
-        const ai3_16k_ratio = (await models_1.configModel.getKeyConfig('ai3_16k_ratio')).value || 0;
-        const ai4_ratio = (await models_1.configModel.getKeyConfig('ai4_ratio')).value || 0;
-        const ai4_32k_ratio = (await models_1.configModel.getKeyConfig('ai4_32k_ratio')).value || 0;
-        const ai4_vision_ratio = (await models_1.configModel.getKeyConfig('ai4_vision_ratio')).value || 0;
+        const ai3_ratio = (await models_1.configModel.getKeyConfig('ai3_ratio'))?.value || 0;
+        const ai3_16k_ratio = (await models_1.configModel.getKeyConfig('ai3_16k_ratio'))?.value || 0;
+        const ai4_ratio = (await models_1.configModel.getKeyConfig('ai4_ratio'))?.value || 0;
+        const ai4_32k_ratio = (await models_1.configModel.getKeyConfig('ai4_32k_ratio'))?.value || 0;
+        const ai4_vision_ratio = (await models_1.configModel.getKeyConfig('ai4_vision_ratio'))?.value || 0;
         const aiRatioInfo = {
             ai3_ratio,
             ai3_16k_ratio,
